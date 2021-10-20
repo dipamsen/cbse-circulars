@@ -8,7 +8,7 @@ const API_URL = ["localhost", "127.0.0.1", ""].includes(
   window.location.hostname
 )
   ? "http://localhost:1035"
-  : "";
+  : "cbse-circulars-fp-api.vercel.app";
 const API = axios.create({ baseURL: API_URL });
 
 interface ExamCircular {
