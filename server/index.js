@@ -16,4 +16,5 @@ app.get("/exam-circulars", async (req, res) => {
   res.json(await ExamCirculars());
 });
 
-app.listen(1035, () => console.log("Listening on 1035"));
+const PORT = process.env.PORT || 1035;
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
